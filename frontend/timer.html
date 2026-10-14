@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Speech Timer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="timer-page">
+
+<div class="timer-layout">
+
+<!-- HINTS -->
+<div class="hints-side">
+    <h2 class="hints-title">Write Your Hints</h2>
+    <textarea class="big-hints" placeholder="Write bullet points, keywords or structure"></textarea>
+</div>
+
+<!-- TIMER -->
+<div class="timer-side">
+
+    <h2 class="speech-title">Your Speech</h2>
+    <p id="selectedTopic" class="topic-text"></p>
+
+    <div class="timer-circle">
+        <div class="timer-value" id="timer">60</div>
+    </div>
+
+    <!-- AUDIO PREVIEW -->
+    <audio id="audioPlayback" controls></audio>
+
+    <!-- CONTROLS -->
+    <div class="timer-controls">
+
+        <button onclick="startRecording()">🎤 Record</button>
+        <button onclick="stopRecording()">⏹ Stop</button>
+        <button onclick="saveSpeech()">💾 Save Speech</button>
+
+        <button onclick="pauseTimer()">Pause Timer</button>
+        <button onclick="restartTimer()">Restart Timer</button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

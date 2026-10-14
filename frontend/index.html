@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Off The Cuff</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button onclick="goProfile()">👤 Profile</button>
+
+<div class="container">
+
+<h1 class="logo">Off The Cuff</h1>
+
+<p class="tagline">Practice Impromptu Speaking Anytime</p>
+<div class="categories">
+
+<p>Select Category</p>
+
+<button onclick="setCategory('debate')">Debate</button>
+
+<button onclick="setCategory('fun')">Fun</button>
+
+<button onclick="setCategory('tech')">Technology</button>
+
+<button onclick="setCategory('social')">Social</button>
+
+<button onclick="setCategory('random')">Random</button>
+
+</div>
+
+<div class="topic-box">
+<p id="topic">Press Spin to get a topic</p>
+</div>
+
+<button onclick="spinTopics()">Spin Topic</button>
+
+<div class="features">
+
+<div class="feature clickable" onclick="goToTimer()">📝 Prepare Hints</div>
+
+<div class="feature">⏱ Set Timer (1 Minute)</div>
+
+<div class="feature">🎤 Record & Speak</div>
+
+</div>
+
+<br>
+
+<button onclick="goToTimer()">START</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
